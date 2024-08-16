@@ -1,6 +1,6 @@
 // Weather components lab
 // No need for states since they array is static 
-
+import './WeatherForecast.css';
 // src/App.jsx
 
 const App = () => {
