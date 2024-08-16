@@ -1,3 +1,6 @@
+// Weather components lab
+// No need for states since they array is static 
+
 // src/App.jsx
 
 const App = () => {
@@ -41,17 +44,16 @@ const App = () => {
   ];
 
   return (
-    <div className="weather">
-      <h2>Weather Forecast</h2>
+    <section>
       {weatherForecasts.map((forecast, index) => (
-        <div key={index} className="weather-day">
+        <div key={index} className="weather">
           <h3>{forecast.day}</h3>
           <img src={forecast.img} alt={forecast.imgAlt} />
           <p><span>Conditions: </span>{forecast.conditions}</p>
           <p><span>Time: </span>{forecast.time}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 
