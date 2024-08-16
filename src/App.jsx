@@ -52,7 +52,9 @@ const App = () => {
           <p><span>Conditions: </span>{forecast.conditions}</p>
           <p><span>Time: </span>{forecast.time}</p>
         </div>
+
       ))}
+
     </section>
   );
 }
